@@ -31,6 +31,9 @@ dependencies {
 
     // Source: https://mvnrepository.com/artifact/com.codeborne/selenide
     implementation("com.codeborne:selenide:7.19.1")
+
+    implementation(project(":api-test"))
+
 }
 
 tasks.test {
