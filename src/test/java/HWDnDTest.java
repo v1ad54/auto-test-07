@@ -99,7 +99,9 @@ public class HWDnDTest {
         goodsInCart.should(visible);
 
         // Удалим товар
-        deleteGoodsFromCart.click();
+//        deleteGoodsFromCart.click();
+        actions().moveToElement(deleteGoodsFromCart)
+                .click().perform();
 
         // Убедимся что теперь товара нет в корзине
         goodsInCart.shouldNot(exist);
