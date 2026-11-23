@@ -70,6 +70,9 @@ public class HWDnDTest {
         Selenide.open("http://localhost:8080");
     }
 
+    /**
+     * Тест 1.1 Перетащить элемент в корзину с помощью Drag-and-Drop.
+     */
     @Test
     void hwDnDTest(){
         // Добавим товар в корзину с помощью Drag-and-Drop
@@ -81,6 +84,9 @@ public class HWDnDTest {
         cartCounter.should(text("1"));
     }
 
+    /**
+     * 1.2 Удалить добавленный элемент из корзины и проверить, что он там больше не отображается.
+     */
     @Test
     void deleteGoodsFromCart(){
         // Добавим товар в корзину с помощью Drag-and-Drop
